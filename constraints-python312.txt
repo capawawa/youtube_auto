@@ -30,7 +30,7 @@ idna==3.18
 imageio==2.37.4
 imageio-ffmpeg==0.6.0
 jiter==0.16.0
-moviepy==1.0.3
+moviepy==2.2.1
 multidict==6.7.1
 mutagen==1.48.1
 numpy==2.5.1
