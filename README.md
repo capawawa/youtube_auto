@@ -14,7 +14,7 @@ An automated YouTube video generator that creates, edits, and uploads videos usi
 
 ## Prerequisites
 
-- Python 3.8+
+- Python 3.12
 - OpenAI API key
 - Stability AI API key
 - YouTube API credentials
@@ -36,11 +36,16 @@ An automated YouTube video generator that creates, edits, and uploads videos usi
    source venv/bin/activate # On Windows: venv\Scripts\activate
    ```
 
-3. **Install dependencies:**
+3. **Install the recorded dependency set:**
 
    ```bash
-   pip install -r requirements.txt
+   python -m pip install --requirement requirements.txt --constraint constraints-python312.txt
    ```
+
+   `requirements.txt` defines the direct compatibility ranges.
+   `constraints-python312.txt` records the exact direct and transitive versions
+   tested with Python 3.12. Tkinter is supplied by the Python runtime rather
+   than PyPI.
 
 4. **Create a `.env` file in the root directory with your API keys:**
 
